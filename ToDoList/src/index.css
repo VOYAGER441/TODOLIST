@@ -1,0 +1,116 @@
+/* index.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todolist {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  color: #333333;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+input[type="text"] {
+  width: 85%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #dddddd;
+  border-radius: 25px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1em;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-size: 1em;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.addWork {
+  background-color: #28a745;
+  color: white;
+}
+
+.addWork:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #f10808;
+}
+
+.moveUp-button,
+.moveDown-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.moveUp-button:hover,
+.moveDown-button:hover {
+  background-color: #218838;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.work {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1em;
+  color: #333;
+  margin-right: 10px;
+}
